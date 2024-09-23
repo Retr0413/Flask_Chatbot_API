@@ -6,5 +6,6 @@ class Config:
     MYSQL_USER = os.getenv('MYSQL_USER', 'your_username')
     MYSQL_PASSWORD = os.getenv('MYSQL_PASSWORD', 'your_password')
     MYSQL_DB = os.getenv('MYSQL_DB', 'chatbot_db')
+    MYSQL_PORT = int(os.getenv('MYSQL_PORT', 3306))
 
 config = Config()
